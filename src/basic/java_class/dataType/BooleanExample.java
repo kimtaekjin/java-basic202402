@@ -1,4 +1,4 @@
-package basic.java_class;
+package basic.java_class.dataType;
 
 public class BooleanExample {
 
