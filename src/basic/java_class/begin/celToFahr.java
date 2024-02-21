@@ -1,4 +1,4 @@
-package begin;
+package basic.java_class.begin;
 
 import java.util.Scanner;
 

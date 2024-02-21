@@ -1,4 +1,4 @@
-package begin;
+package basic.java_class.begin;
 
 public class variableExampple {
 

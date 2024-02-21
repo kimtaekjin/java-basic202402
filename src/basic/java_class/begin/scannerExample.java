@@ -1,4 +1,4 @@
-package begin;
+package basic.java_class.begin;
 //1. Sanner API 로딩(제공되는 Scanner 클래스 정보를 현재 클래스로 가져오자)
 
 import java.util.Scanner;

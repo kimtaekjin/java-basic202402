@@ -1,4 +1,4 @@
-package begin;
+package basic.java_class.begin;
 
 public class PrintExample {
     public static void main(String[] args) {
