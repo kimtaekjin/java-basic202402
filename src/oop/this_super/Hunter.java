@@ -5,6 +5,10 @@ import oop.this_super.Player;
 public class Hunter extends Player {
 
     String pet;
+    Hunter(String name){
+        super(name);
+        this.pet="아기 늑대";
+    }
 
 
     @Override
