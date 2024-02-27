@@ -23,45 +23,105 @@ public class ScoreMain {
          */
 
         Scanner sc=new Scanner(System.in);
-    Score[] score=new Score[100];
-        for (int i = 0; i <score.length ; i++) {
-            System.out.println("이름을 입력해주세요: ");
-            System.out.println("'그만'을 입력할 시  종료됩니다.");
-            String name=sc.next();
+        Score[] score=new Score[100];
 
-            if(name.equals("그만")){
+
+
+        int idx=0;
+            System.out.println("****학생 점수 입력 프로그램***");
+            System.out.println("이름 입력 창에 '그만'을 입력할 시 즉시 종료됩니다.");
+//        while(score[score.length-1]!=null){
+            while (idx!=score.length){
+            System.out.print("#이름: ");
+            String name=sc.next();
+            if(name.equals("그만")) {
+                System.out.println("프로그램 종료");
                 break;
             }
+            Score s=new Score();
 
-            System.out.println("입력받은 이름: "+name);
+            System.out.println("#국어:");
+            int lang =sc.nextInt();
+            if(!s.isValidateScore(lang)){
+                //유효성 검사
+                continue;
+            }
+            System.out.println("#영어:");
+            int English =sc.nextInt();
+            if(!s.isValidateScore(English)){
+                //유효성 검사
+                continue;
+            }
+            System.out.println("#수학:");
+            int Math =sc.nextInt();
+            if(!s.isValidateScore(Math)){
+                //유효성 검사
+                continue;
+            }
 
-            System.out.println("국어 점수를 입력해주세요");
-            int lang=sc.nextInt();
-            System.out.println("입력받은 국어 점수: "+lang);
+          s.setName(name);
+            s.setLang(lang);
+            s.setMath(Math);
+            s.setEnglish(English);
+            s.setTotalAndAvg();
 
-            System.out.println("영어 점수를 입력해주세요");
-            int English=sc.nextInt();
-            System.out.println("입력받은 영어 점수: "+English);
+//            int total = lang+English+Math;
+//            double avg = total/3.0;
+//            s.setTotal(total);
+//            s.setAvg(avg);
 
-            System.out.println("수학 점수를 입력해주세요");
-            int Math=sc.nextInt();
-            System.out.println("입력받은 수학 점수: "+Math);
+            score[idx]=s;
+            idx++;
 
-            System.out.printf("이름: %s, 국어: %d, 영어: %d, 수학: %d\n",name,lang,English,Math);
-            System.out.println("---------------------------------");
-
-            Score newScore = new Score(name, lang, English, Math);
-            score[i] = newScore;
-        }
+                System.out.println("***학생 정보 입력 완료 ***\n");
+        }//입력 반복은 끝
 
 
-        for(Score s:score){
+        for (Score s : score) {
             if(s==null){
                 break;
             }
-            s.ScoreInfo();
-
+            s.scoreInfo();
+            System.out.println("-------------------------------");
         }
+        sc.close();
+
+
+
+
+
+
+
+//        for (int i = 0; i <score.length ; i++) {
+//            System.out.println("이름을 입력해주세요: ");
+//            System.out.println("'그만'을 입력할 시  종료됩니다.");
+//            String name=sc.next();
+//
+//            if(name.equals("그만")){
+//                break;
+//            }
+//
+//            System.out.println("입력받은 이름: "+name);
+//
+//            System.out.println("국어 점수를 입력해주세요");
+//            int lang=sc.nextInt();
+//            System.out.println("입력받은 국어 점수: "+lang);
+//
+//            System.out.println("영어 점수를 입력해주세요");
+//            int English=sc.nextInt();
+//            System.out.println("입력받은 영어 점수: "+English);
+//
+//            System.out.println("수학 점수를 입력해주세요");
+//            int Math=sc.nextInt();
+//            System.out.println("입력받은 수학 점수: "+Math);
+//
+//            System.out.printf("이름: %s, 국어: %d, 영어: %d, 수학: %d\n",name,lang,English,Math);
+//            System.out.println("---------------------------------");
+//
+//            Score newScore = new Score(name, lang, English, Math);
+//            score[i] = newScore;
+//        }
+
 
 
     }
