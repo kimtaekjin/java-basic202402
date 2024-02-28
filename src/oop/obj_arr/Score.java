@@ -65,6 +65,15 @@ public class Score {
     */
 
 
+    public Score(String name, int lang, int english, int math) {
+        this.name = name;
+        this.lang = lang;
+        English = english;
+        Math = math;
+        setTotalAndAvg();
+    }
+
+
     public double getAvg() {
         return avg;
     }
@@ -89,7 +98,7 @@ public class Score {
 
  //점수 유효성 검증
 
-    public  boolean isValidateScore(int score) {
+    public static boolean isValidateScore(int score) {
         if (score > 100 || score < 0) {
             System.out.println("유효하지 않은 점수입니다.");
             return false;

@@ -26,7 +26,7 @@ public class mage extends Player {
             }
             int blizzard= (int) (Math.floor(Math.random()*6)+10);
             m1.hp-=blizzard;
-            System.out.printf("%s 님이 %d의 피해를 입었습니다. (남은체력: %d) %d\n",m1.name,blizzard,m1.hp);
+            System.out.printf("%s 님이 %s의 피해를 입었습니다. (남은체력: %d) %d\n",this.name,m1.name,blizzard,m1.hp);
             idx++;
         }
     }

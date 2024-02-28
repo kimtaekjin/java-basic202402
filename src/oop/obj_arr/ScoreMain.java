@@ -2,6 +2,8 @@ package oop.obj_arr;
 
 import java.util.Scanner;
 
+import static oop.obj_arr.Score.isValidateScore;
+
 public class ScoreMain {
     public static void main(String[] args) {
 
@@ -38,39 +40,39 @@ public class ScoreMain {
                 System.out.println("프로그램 종료");
                 break;
             }
-            Score s=new Score();
+
 
             System.out.println("#국어:");
             int lang =sc.nextInt();
-            if(!s.isValidateScore(lang)){
+            if(!isValidateScore(lang)){
                 //유효성 검사
                 continue;
             }
             System.out.println("#영어:");
             int English =sc.nextInt();
-            if(!s.isValidateScore(English)){
+            if(!isValidateScore(English)){
                 //유효성 검사
                 continue;
             }
             System.out.println("#수학:");
             int Math =sc.nextInt();
-            if(!s.isValidateScore(Math)){
+            if(!isValidateScore(Math)){
                 //유효성 검사
                 continue;
             }
 
-          s.setName(name);
-            s.setLang(lang);
-            s.setMath(Math);
-            s.setEnglish(English);
-            s.setTotalAndAvg();
+
+
+            Score sco= new Score(name,lang,English,Math);
+
+
 
 //            int total = lang+English+Math;
 //            double avg = total/3.0;
 //            s.setTotal(total);
 //            s.setAvg(avg);
 
-            score[idx]=s;
+            score[idx]=sco;
             idx++;
 
                 System.out.println("***학생 정보 입력 완료 ***\n");
