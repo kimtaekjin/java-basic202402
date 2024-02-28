@@ -46,7 +46,7 @@ public abstract class pet {
 
 
     public   void walk(){
-        System.out.println("강아지는 삭챌을 좋아함");
+        System.out.println("강아지는 산책을 좋아함");
     };
 
 
