@@ -1,7 +1,5 @@
 package etc.exception.basic;
 
-import oop.inter.bed.Main;
-
 import java.util.Scanner;
 
 public class tryCatchExample {
