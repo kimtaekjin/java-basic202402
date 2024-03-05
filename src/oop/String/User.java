@@ -1,13 +1,8 @@
-package oop.String;
+package oop.string;
 
 public class User {
 
     String id;
-
     String pw;
-
-
-
-
 
 }

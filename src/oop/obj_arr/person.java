@@ -1,20 +1,17 @@
 package oop.obj_arr;
 
-public class person {
-    private  String name;
+public class Person {
+
+    private String name;
     private int age;
     private String gender;
 
-    public person(String name, int age, String gender) {
+    public Person() {}
+
+    public Person(String name, int age, String gender) {
         this.name = name;
         this.age = age;
         this.gender = gender;
-    }
-
-
-    public void personsInfo(){
-        System.out.printf("이름은 %s , 나이는 %d , 성별은 %s\n ",name,age,gender);
-        System.out.println("---------------------------------");
     }
 
     public String getName() {
@@ -41,5 +38,20 @@ public class person {
         this.gender = gender;
     }
 
+    public void personInfo() {
+        System.out.printf("이름: %s\n나이: %d세\n성별: %s\n"
+                , this.name, this.age, this.gender);
+        System.out.println("---------------------------------------");
+    }
+
 
 }
+
+
+
+
+
+
+
+
+

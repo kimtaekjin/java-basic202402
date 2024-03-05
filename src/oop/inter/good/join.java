@@ -1,16 +1,14 @@
 package oop.inter.good;
 
-public class join implements  IuserSevice{
+public class Join implements IUserService {
 
-    public join() {
-        System.out.println("회원 가입 요청");
+    public Join() {
+        System.out.println("회원 가입 요청이 들어옴!");
     }
-
-
 
     @Override
     public void execute() {
-        System.out.println("회원 가입 로직 실행");
-        System.out.println("DB접속 , 값을 불러오고 있습니다.");
+        System.out.println("회원 가입 로직이 실행됩니다.");
+        System.out.println("DB 접속도 하고, 입력값도 가져오고, 값을 집어넣고 등등등....");
     }
 }

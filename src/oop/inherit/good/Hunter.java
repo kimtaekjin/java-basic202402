@@ -1,13 +1,12 @@
 package oop.inherit.good;
 
-public class Hunter extends Player{
+public class Hunter extends  Player {
 
     String pet;
-
 
     @Override
     void characterInfo() {
         super.characterInfo();
-        System.out.println("#펫: "+pet);
+        System.out.println("# 펫 이름: " + pet);
     }
 }

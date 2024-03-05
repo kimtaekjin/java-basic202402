@@ -1,11 +1,11 @@
 package oop.inter.animal;
 
-public class Bulldog extends Livings implements violent,Huntable{
+public class BullDog extends Livings implements Violent, Huntable {
 
 
     @Override
     public void feed(String foodName) {
-        System.out.println("불독이"+foodName+"을 씹어먹습니다.");
+        System.out.println("불독이 " + foodName + "을 먹어요.");
     }
 
     @Override
@@ -15,16 +15,16 @@ public class Bulldog extends Livings implements violent,Huntable{
 
     @Override
     public void angry() {
-        System.out.println("불독이 화가 났습니다.");
+        System.out.println("불독이 화를 내요!");
     }
 
     @Override
     public void fight() {
-        System.out.println("불독이 미쳐날뜁니다.");
+        System.out.println("불독이 싸움을 거네요!");
     }
 
     @Override
     public void hunt(Animal animal) {
-        System.out.println("불독이 사냥!");
+        System.out.println("불독이 사냥을 해요!");
     }
 }

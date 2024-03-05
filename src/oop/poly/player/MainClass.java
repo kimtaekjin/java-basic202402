@@ -6,8 +6,8 @@ public class MainClass {
 
         Warrior w1 = new Warrior("전사1");
         Warrior w2 = new Warrior("전사2");
-        mage m1 = new mage("마법사1");
-        mage m2 = new mage("마법사2");
+        Mage m1 = new Mage("마법사1");
+        Mage m2 = new Mage("마법사2");
         Hunter h1 = new Hunter("사냥꾼1");
         Hunter h2 = new Hunter("사냥꾼2");
 
@@ -44,9 +44,19 @@ public class MainClass {
 
 
 
-
-
-
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

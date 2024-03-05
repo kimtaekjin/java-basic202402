@@ -3,38 +3,54 @@ package oop.obj_arr;
 import java.util.Arrays;
 
 public class MainClass {
+
     public static void main(String[] args) {
-//        person p =new person("홍길동",20,"남자");
-//        person p2 =new person("홍길동2",30,"남자");
-//        person p3 =new person("홍순이",40,"여자");
-//        p.personsInfo();
-//        p2.personsInfo();
-//        p3.personsInfo();
 
-//        int[] arr=new int[3];
-//        person[] people = new person[3];
-//        people[0]=new person()
+//        Person kim = new Person("김춘식", 32, "남자");
+//        Person lee = new Person("이영희", 25, "여자");
+//        Person park = new Person("박뽀삐", 50, "남자");
+//
+//        kim.personInfo();
+//        lee.personInfo();
+//        park.personInfo();
 
-        person[] people = {
-                new person("홍길동",20,"남자"),
-                new person("홍길동2",30,"남자"),
-                new person("홍순이",40,"여자")
+//        int[] arr = new int[3];
+//        Person[] people = new Person[3];
+//        people[0] = new Person("김춘식", 32, "남자");
+//        people[1] = new Person....
+
+        int[] arr = {1, 3, 5, 7, 9};
+        Person[] people = {
+                new Person("김춘식", 32, "남자"),
+                new Person("이영희", 25, "여자"),
+                new Person("박뽀삐", 50, "남자")
         };
 
 //        System.out.println(Arrays.toString(people));
 
-//    people[0].personsInfo();
-//    people[1].personsInfo();
-//    people[2].personsInfo();
+//        people[0].personInfo();
+//        people[1].personInfo();
+//        people[2].personInfo();
 
-//        for (int i = 0; i <people.length ; i++) {
-//            people[i].personsInfo();
+//        for (int i = 0; i < people.length; i++) {
+//            people[i].personInfo();
 //        }
 
-        //iter (단축키)
-        for (person p : people) {
-            p.personsInfo();
+        for (Person p : people) {
+            p.personInfo();
         }
 
     }
+
 }
+
+
+
+
+
+
+
+
+
+
+

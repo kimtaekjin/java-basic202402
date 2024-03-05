@@ -1,7 +1,9 @@
 package oop.inter.animal;
 
-public interface violent {
+public interface Violent {
+
     void angry();
 
     void fight();
+
 }

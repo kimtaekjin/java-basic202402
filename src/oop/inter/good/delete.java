@@ -1,12 +1,13 @@
 package oop.inter.good;
 
-public class delete implements IuserSevice{
-    public delete() {
-        System.out.println("회원 탈퇴 요청");
+public class Delete implements IUserService {
+
+    public Delete() {
+        System.out.println("회원 탈퇴 요청이 들어옴");
     }
 
     @Override
     public void execute() {
-        System.out.println("탈퇴 완료");
+        System.out.println("사용자의 아이디를 받아서 데이터베이스에서 찾아서 삭제 조치....");
     }
 }

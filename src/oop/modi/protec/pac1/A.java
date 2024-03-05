@@ -2,13 +2,13 @@ package oop.modi.protec.pac1;
 
 public class A {
 
-    protected  int x;
+    protected int x;
     int y; // default
 
+    protected A(int i) {}
+    A(double d) {}
 
-    protected A(int i){}
-    A(double d){}
+    protected void method1() {}
+    void method2() {}
 
-    protected  void method1(){}
-    void method2(){}
 }

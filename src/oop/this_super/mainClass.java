@@ -1,39 +1,35 @@
 package oop.this_super;
 
-public class mainClass {
+public class MainClass {
 
     public static void main(String[] args) {
+
         Player p1 = new Player();
+        p1.name = "플레이어1";
         p1.characterInfo();
-        System.out.println("====================");
-        Player p2= new Player("플레이어2");
+
+        System.out.println("-------------------------------------------");
+
+        Player p2 = new Player("플레이어2");
         p2.characterInfo();
-        Player p3 = new Player("masition");
+
+        System.out.println("-------------------------------------------");
+
+        Player p3 = new Player("플레이어3", 100);
         p3.characterInfo();
 
-        System.out.println("main에서 p2의 주소값: "+p2);
+        System.out.println("-------------------------------------------");
 
-        System.out.println("-------------------------------------");
+        p1.attack(p2);
+        p2.attack(p3);
+        p3.attack(p1);
 
+        System.out.println("-------------------------------------------");
 
-        Player p4 = new Player("플레이어4",60);
-        p4.characterInfo();
-        p1.attack(p4);
-        p2.attack(p4);
-        p3.attack(p4);
-
-
-        System.out.println("------------------------");
-
-        warrior w1 = new warrior("warrior");
+        Warrior w1 = new Warrior("전사짱짱맨");
         w1.characterInfo();
-        w1.attack(p2);
 
-        System.out.println("------------------------");
-        mage m1 = new mage("법사");
-        m1.characterInfo();
-        System.out.println("------------------------");
-        Hunter h1= new Hunter("사냥꾼");
-        h1.characterInfo();
+
     }
+
 }

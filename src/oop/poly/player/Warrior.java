@@ -31,13 +31,12 @@ public class Warrior extends Player {
         int damage; String job;
         if(p instanceof Warrior) {
             damage = 10; job = "전사";
-        } else if(p instanceof mage) {
+        } else if(p instanceof Mage) {
             damage = 20; job = "마법사";
         } else {
             damage = 15; job = "사냥꾼";
         }
-        Player die = new Player();
-        die.die();
+
         p.hp -= damage;
         System.out.printf("%s님(%s)이 %d의 피해를 입었습니다.\n", p.name, job, damage);
         System.out.printf("%s님의 남은 체력: %d\n", p.name, p.hp);
@@ -52,3 +51,17 @@ public class Warrior extends Player {
         System.out.println("# 분노: " + rage);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

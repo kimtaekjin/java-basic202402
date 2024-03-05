@@ -1,19 +1,17 @@
 package oop.this_super;
 
-import oop.this_super.Player;
+public class Mage extends Player {
 
-public class mage extends Player {
     int mana;
 
-    mage(String name){
+    Mage(String name) {
         super(name);
-        this.mana=100;
+        this.mana = 100;
     }
 
-    void characterInfo(){
-
+    @Override
+    void characterInfo() {
         super.characterInfo();
-        System.out.println("#마나: "+mana);
+        System.out.println("# 마나: " + mana);
     }
-
 }

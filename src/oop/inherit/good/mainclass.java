@@ -1,33 +1,52 @@
 package oop.inherit.good;
 
-public class mainclass {
+public class MainClass {
+
     public static void main(String[] args) {
-        warrior w1=new warrior();
-        w1.name = "전사";
+
+        Warrior w1 = new Warrior();
+        w1.name = "전사1";
         w1.level = 1;
-        w1.atk=3;
-        w1.hp=50;
-        w1.rage=20;
+        w1.atk = 3;
+        w1.hp = 50;
+        w1.rage = 60;
         w1.characterInfo();
 
-        System.out.println("-----------------------");
+        System.out.println("--------------------------------------------");
 
-        mage m1=new mage();
-        m1.name ="마법사";
+        Mage m1 = new Mage();
+        m1.name = "마법사";
         m1.level = 1;
-        m1.atk = 5;
-        m1.hp=30;
-        m1.mana=50;
+        m1.atk = 2;
+        m1.hp = 50;
+        m1.mana = 100;
         m1.characterInfo();
 
-        System.out.println("-----------------------");
+        System.out.println("--------------------------------------------");
 
-        Hunter h1=new Hunter();
-        h1.name ="헌터";
+        Hunter h1 = new Hunter();
+        h1.name = "사냥꾼1";
         h1.level = 1;
-        h1.hp=40;
         h1.atk = 4;
-        h1.pet="고양이";
+        h1.hp = 50;
+        h1.pet = "멍멍이";
         h1.characterInfo();
+
     }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,13 +1,12 @@
 package oop.inherit.good;
 
-public class mage extends Player{
+public class Mage extends Player {
+
     int mana;
 
-
-    void characterInfo(){
-
+    @Override
+    void characterInfo() {
         super.characterInfo();
-        System.out.println("#마나: "+mana);
+        System.out.println("# 마나: " + mana);
     }
-
 }

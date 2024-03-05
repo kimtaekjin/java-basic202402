@@ -1,6 +1,7 @@
 package oop.inter.animal;
 
-public class shark implements Huntable,violent{
+public class Shark implements Huntable, Violent {
+
     @Override
     public void hunt(Animal animal) {
 
