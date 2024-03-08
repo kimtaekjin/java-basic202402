@@ -1,7 +1,6 @@
 package video.user.service;
 
 import video.common.AppService;
-import video.ui.AppUi;
 import video.user.domain.Grade;
 import video.user.domain.User;
 import video.user.repository.UserRepository;
